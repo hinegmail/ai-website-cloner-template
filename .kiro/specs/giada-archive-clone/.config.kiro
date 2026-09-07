@@ -1,0 +1,60 @@
+{
+  "sourceUrl": "https://giada.com/archive/index",
+  "destinationRoute": "/archive",
+  "destinationFile": "src/app/archive/page.tsx",
+  "siteKey": "giada-com-0f7e9c3a",
+  "pageKey": "root-a1b2c3d4",
+  "artifactRoot": "docs/research/giada-com-0f7e9c3a/root-a1b2c3d4",
+  "screenshotRoot": "docs/design-references/giada-com-0f7e9c3a/root-a1b2c3d4",
+  "componentRoot": "src/components/sites/giada-com-0f7e9c3a/root-a1b2c3d4",
+  "assetRoot": "public/sites/giada-com-0f7e9c3a/root-a1b2c3d4",
+  "sharedComponentRoot": "src/components/sites/giada-com-0f7e9c3a/shared",
+  "components": [
+    {
+      "name": "StickyHeader",
+      "type": "layout",
+      "complexity": "simple",
+      "specFile": "docs/research/giada-com-0f7e9c3a/root-a1b2c3d4/components/StickyHeader.spec.md"
+    },
+    {
+      "name": "SeasonCard",
+      "type": "content",
+      "complexity": "simple",
+      "repeatable": true,
+      "instances": 8,
+      "specFile": "docs/research/giada-com-0f7e9c3a/root-a1b2c3d4/components/SeasonCard.spec.md"
+    },
+    {
+      "name": "Footer",
+      "type": "layout",
+      "complexity": "medium",
+      "specFile": "docs/research/giada-com-0f7e9c3a/root-a1b2c3d4/components/Footer.spec.md"
+    }
+  ],
+  "designTokens": {
+    "fonts": {
+      "primary": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "chinese": "'Noto Sans SC', sans-serif"
+    },
+    "colors": {
+      "background": "rgb(0, 0, 0)",
+      "textPrimary": "rgba(235, 235, 235, 0.64)",
+      "textActive": "rgb(255, 255, 255)",
+      "textSecondary": "rgba(255, 255, 255, 0.6)"
+    }
+  },
+  "assets": {
+    "videos": [
+      "https://giada-cn-1302696420.cos.ap-guangzhou.myqcloud.com/cover-26FW.mp4",
+      "https://giada-cn-1302696420.cos.ap-guangzhou.myqcloud.com/2026SS-Cover.mp4",
+      "https://giada-cn-1302696420.cos.ap-guangzhou.myqcloud.com/2025FW-H.mp4",
+      "https://giada-cn-1302696420.cos.ap-guangzhou.myqcloud.com/25SS-h.mp4",
+      "https://giada-cn-1302696420.cos.ap-guangzhou.myqcloud.com/FW24-cover.mp4",
+      "https://giada-cn-1302696420.cos.ap-guangzhou.myqcloud.com/SS24-cover.mp4",
+      "https://giada-cn-1302696420.cos.ap-guangzhou.myqcloud.com/FW23-cover.mp4",
+      "https://giada-cn-1302696420.cos.ap-guangzhou.myqcloud.com/SS23-cover.mp4"
+    ]
+  },
+  "extractionComplete": true,
+  "phase": "ready_for_build"
+}

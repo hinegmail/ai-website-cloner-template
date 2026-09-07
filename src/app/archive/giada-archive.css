@@ -1,0 +1,263 @@
+/* GIADA Archive Page - Global Styles */
+
+:root {
+  /* GIADA Color Palette */
+  --giada-black: rgb(0, 0, 0);
+  --giada-text-primary: rgba(235, 235, 235, 0.64);
+  --giada-text-white: rgb(255, 255, 255);
+  --giada-text-secondary: rgba(255, 255, 255, 0.6);
+  --giada-overlay-dark: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Archive page specific root styles */
+.giada-archive-page {
+  background-color: var(--giada-black);
+  color: var(--giada-text-primary);
+  font-size: 12px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Typography */
+.giada-season-title {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.giada-season-description {
+  font-size: 10px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  line-height: 1.6;
+  letter-spacing: 0px;
+  margin-bottom: 0px;
+}
+
+/* Video Container */
+.giada-video-container {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 24px;
+  background-color: var(--giada-black);
+}
+
+.giada-video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Header Styles */
+.giada-header {
+  position: sticky;
+  top: 0;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  background-color: transparent;
+  z-index: 100;
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.giada-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+  height: 100%;
+}
+
+.giada-nav-link {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--giada-text-primary);
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0 8px;
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+.giada-nav-link:hover {
+  color: var(--giada-text-white);
+}
+
+.giada-nav-link.active {
+  color: var(--giada-text-white);
+  font-weight: 500;
+}
+
+/* Main Content Area */
+.giada-main {
+  display: block;
+  width: 100%;
+  padding: 0px;
+  background-color: transparent;
+}
+
+.giada-season-card {
+  display: block;
+  width: 100%;
+  padding: 0px;
+  margin-bottom: 0px;
+  background-color: transparent;
+}
+
+/* Footer Styles */
+.giada-footer {
+  display: block;
+  width: 100%;
+  padding: 24px 16px;
+  background-color: var(--giada-black);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.giada-footer-section {
+  margin-bottom: 16px;
+}
+
+.giada-footer-section-title {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--giada-text-primary);
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.giada-footer-link {
+  font-size: 12px;
+  color: var(--giada-text-primary);
+  text-decoration: none;
+  margin-bottom: 8px;
+  display: block;
+  transition: color 0.2s ease;
+}
+
+.giada-footer-link:hover {
+  color: var(--giada-text-white);
+}
+
+/* Collapse functionality */
+.giada-collapse-item {
+  margin-bottom: 12px;
+}
+
+.giada-collapse-header {
+  cursor: pointer;
+  user-select: none;
+}
+
+.giada-collapse-body {
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+
+.giada-collapse-body.collapsed {
+  max-height: 0;
+  opacity: 0;
+}
+
+/* Language selector */
+.giada-language-selector {
+  font-size: 12px;
+  color: var(--giada-text-primary);
+  margin: 12px 0;
+}
+
+.giada-language-selector .active {
+  color: var(--giada-text-white);
+  font-weight: 500;
+}
+
+/* Copyright */
+.giada-copyright {
+  font-size: 10px;
+  color: var(--giada-text-primary);
+  margin-top: 16px;
+}
+
+.giada-copyright-link {
+  color: var(--giada-text-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.giada-copyright-link:hover {
+  color: var(--giada-text-white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .giada-season-title {
+    font-size: 13px;
+  }
+
+  .giada-season-description {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  .giada-nav {
+    gap: 16px;
+  }
+
+  .giada-nav-link {
+    font-size: 11px;
+    padding: 0 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .giada-header {
+    height: 44px;
+    padding: 0 12px;
+  }
+
+  .giada-season-title {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .giada-season-description {
+    font-size: 8px;
+    line-height: 1.4;
+  }
+
+  .giada-nav {
+    gap: 12px;
+  }
+
+  .giada-nav-link {
+    font-size: 10px;
+    padding: 0;
+  }
+
+  .giada-footer {
+    padding: 16px 12px;
+  }
+
+  .giada-footer-section-title {
+    font-size: 11px;
+  }
+
+  .giada-footer-link {
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+}
